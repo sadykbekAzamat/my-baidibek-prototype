@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.grid-shop-parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define the grid columns */
+  grid-gap: 20px;
+  row-gap: 20px;
+  column-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.link-style {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+}
+
+
+.shop-item-parent {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.shop-item-parent h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.more-info-shop {
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.shop-item-parent p:first-child {
+  font-weight: bold;
+}
+
+/* Set a maximum width for the images */
+.shop-item-image {
+  width: 100%; /* Ensure image width takes full width of its container */
+  height: 350px; /* Set the fixed height */
+  object-fit: cover; /* Cut the center if image exceeds the specified height */
+}
+
+.header-parent {
+  display: flex; 
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+  width: 100%;
+  height: 150px;
+}
+
+.header-second-parent{
+  gap: 30px;
+  display: flex; 
+  margin-left: 5%;
+  
+}
+
+.to-home-text {
+  
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; 
+}
+
+.image-logo {
+  width: 80px;
+  height: 80px; /* Adjust the margin as needed */
+}
+
+.title {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.link-a {
+  font-size: 20px;
+}
+
+.service-category-list-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-service-category {
+  height: 35px;
+}
+.service-category-list {
+	display: block;
+}
+
+
+.service-item-parent {
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.service-item-image { /* Ensure image width takes full width of its container */
+    height: 40px; /* Set the fixed height */
+    object-fit: cover; 
+}
+
+.service-item-list-parent {
+  margin-left: 3%;
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
+
+.is-not-mobile-parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.is-not-mobile-parent img {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
+  margin-top: 20px; /* Add some space between text and QR code */
+}
+
+.is-not-mobile-header-text {
+  margin-top: 20px;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center; /* Center-align the text */
+}
